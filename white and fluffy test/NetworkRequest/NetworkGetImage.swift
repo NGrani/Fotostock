@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class NetworkGetImage {
 
@@ -48,6 +49,23 @@ class NetworkGetImage {
         request.httpMethod = "get"
         let task = createDataTask(from: request, completion: completion)
         task.resume()
+    }
+    
+    func jsonAlomofire(searchRequest: String, completion: @escaping ([ImagesResults]) -> Void){
+        let parameters = self.prepareParaments(searchTerm: searchRequest)
+        let url = self.url(params: parameters)
+        AF.request(url).response{ response in
+            guard let data = response.data else { return }
+            do{
+                let decoder = JSONDecoder()
+                let json = try decoder.decode([ImagesResults].self, from: data)
+                DispatchQueue.main.async {
+                    completion(json)
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 }
 

@@ -7,5 +7,6 @@ target 'white and fluffy test' do
 
   # Pods for white and fluffy test
 pod 'SDWebImage', '~> 5.0'
+pod 'Alamofire'
 
 end
