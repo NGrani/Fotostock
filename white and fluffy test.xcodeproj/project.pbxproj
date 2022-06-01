@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC9CE9AED2700FF0ABCB7F4 /* Pods_white_and_fluffy_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDD75C52059A4F67AAF1292 /* Pods_white_and_fluffy_test.framework */; };
+		857C539D28462D9200A36A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C539C28462D9200A36A5B /* AppDelegate.swift */; };
+		857C539F28462D9200A36A5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C539E28462D9200A36A5B /* SceneDelegate.swift */; };
+		857C53A128462D9200A36A5B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53A028462D9200A36A5B /* MainTabBar.swift */; };
+		857C53A728462D9200A36A5B /* white_and_fluffy_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 857C53A528462D9200A36A5B /* white_and_fluffy_test.xcdatamodeld */; };
+		857C53A928462D9400A36A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 857C53A828462D9400A36A5B /* Assets.xcassets */; };
+		857C53AC28462D9400A36A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857C53AA28462D9400A36A5B /* LaunchScreen.storyboard */; };
+		857C53B428462F8400A36A5B /* FavoriteImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53B328462F8400A36A5B /* FavoriteImageViewController.swift */; };
+		857C53B628462FBF00A36A5B /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53B528462FBF00A36A5B /* ImagesViewController.swift */; };
+		857C53B82846322000A36A5B /* ImagesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53B72846322000A36A5B /* ImagesResults.swift */; };
+		857C53BC2846328C00A36A5B /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53BB2846328C00A36A5B /* ImagesCollectionViewCell.swift */; };
+		857C53BE2846337200A36A5B /* Extension UIView + indetifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53BD2846337200A36A5B /* Extension UIView + indetifier.swift */; };
+		857C53C22846A81300A36A5B /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53C12846A81300A36A5B /* NetworkDataFetcher.swift */; };
+		8583DEBD28476B180063ACF7 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583DEBC28476B180063ACF7 /* FavoriteTableViewCell.swift */; };
+		8583DEC028476C8D0063ACF7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583DEBF28476C8D0063ACF7 /* DetailViewController.swift */; };
+		8583DEC22847722A0063ACF7 /* NetworkGetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583DEC12847722A0063ACF7 /* NetworkGetImage.swift */; };
+		8598A6C928480BBC00352B53 /* favorite.json in Resources */ = {isa = PBXBuildFile; fileRef = 8598A6C828480BBC00352B53 /* favorite.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FDD75C52059A4F67AAF1292 /* Pods_white_and_fluffy_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_white_and_fluffy_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		857C539928462D9200A36A5B /* white and fluffy test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "white and fluffy test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		857C539C28462D9200A36A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		857C539E28462D9200A36A5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		857C53A028462D9200A36A5B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		857C53A628462D9200A36A5B /* white_and_fluffy_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = white_and_fluffy_test.xcdatamodel; sourceTree = "<group>"; };
+		857C53A828462D9400A36A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		857C53AB28462D9400A36A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		857C53AD28462D9400A36A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857C53B328462F8400A36A5B /* FavoriteImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImageViewController.swift; sourceTree = "<group>"; };
+		857C53B528462FBF00A36A5B /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		857C53B72846322000A36A5B /* ImagesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesResults.swift; sourceTree = "<group>"; };
+		857C53BB2846328C00A36A5B /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		857C53BD2846337200A36A5B /* Extension UIView + indetifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension UIView + indetifier.swift"; sourceTree = "<group>"; };
+		857C53C12846A81300A36A5B /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		8583DEBC28476B180063ACF7 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		8583DEBF28476C8D0063ACF7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8583DEC12847722A0063ACF7 /* NetworkGetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGetImage.swift; sourceTree = "<group>"; };
+		8598A6C828480BBC00352B53 /* favorite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = favorite.json; sourceTree = "<group>"; };
+		8EE26ECDBCEBEE6A8BA888D0 /* Pods-white and fluffy test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-white and fluffy test.release.xcconfig"; path = "Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test.release.xcconfig"; sourceTree = "<group>"; };
+		96A371A530C09D33AE90FB29 /* Pods-white and fluffy test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-white and fluffy test.debug.xcconfig"; path = "Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		857C539628462D9200A36A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC9CE9AED2700FF0ABCB7F4 /* Pods_white_and_fluffy_test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B00369D2A6814BE2C19F90C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD75C52059A4F67AAF1292 /* Pods_white_and_fluffy_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		857C539028462D9200A36A5B = {
+			isa = PBXGroup;
+			children = (
+				857C539B28462D9200A36A5B /* white and fluffy test */,
+				857C539A28462D9200A36A5B /* Products */,
+				C47AD93A262619A6E5312757 /* Pods */,
+				1B00369D2A6814BE2C19F90C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		857C539A28462D9200A36A5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				857C539928462D9200A36A5B /* white and fluffy test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		857C539B28462D9200A36A5B /* white and fluffy test */ = {
+			isa = PBXGroup;
+			children = (
+				857C539C28462D9200A36A5B /* AppDelegate.swift */,
+				857C539E28462D9200A36A5B /* SceneDelegate.swift */,
+				857C53A028462D9200A36A5B /* MainTabBar.swift */,
+				8583DEBA284769520063ACF7 /* MainImages */,
+				8583DEBB284769690063ACF7 /* Favorite */,
+				8583DEBE28476C460063ACF7 /* Detail */,
+				857C53C62846ADB200A36A5B /* Models */,
+				857C53C52846AD9400A36A5B /* NetworkRequest */,
+				857C53C72846ADCB00A36A5B /* Extension */,
+				857C53A828462D9400A36A5B /* Assets.xcassets */,
+				857C53AA28462D9400A36A5B /* LaunchScreen.storyboard */,
+				857C53AD28462D9400A36A5B /* Info.plist */,
+				857C53A528462D9200A36A5B /* white_and_fluffy_test.xcdatamodeld */,
+			);
+			path = "white and fluffy test";
+			sourceTree = "<group>";
+		};
+		857C53C52846AD9400A36A5B /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				857C53C12846A81300A36A5B /* NetworkDataFetcher.swift */,
+				8583DEC12847722A0063ACF7 /* NetworkGetImage.swift */,
+				8598A6CA284810B100352B53 /* localData */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		857C53C62846ADB200A36A5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				857C53B72846322000A36A5B /* ImagesResults.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		857C53C72846ADCB00A36A5B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				857C53BD2846337200A36A5B /* Extension UIView + indetifier.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8583DEBA284769520063ACF7 /* MainImages */ = {
+			isa = PBXGroup;
+			children = (
+				857C53B528462FBF00A36A5B /* ImagesViewController.swift */,
+				857C53BB2846328C00A36A5B /* ImagesCollectionViewCell.swift */,
+			);
+			path = MainImages;
+			sourceTree = "<group>";
+		};
+		8583DEBB284769690063ACF7 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				857C53B328462F8400A36A5B /* FavoriteImageViewController.swift */,
+				8583DEBC28476B180063ACF7 /* FavoriteTableViewCell.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		8583DEBE28476C460063ACF7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8583DEBF28476C8D0063ACF7 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8598A6CA284810B100352B53 /* localData */ = {
+			isa = PBXGroup;
+			children = (
+				8598A6C828480BBC00352B53 /* favorite.json */,
+			);
+			path = localData;
+			sourceTree = "<group>";
+		};
+		C47AD93A262619A6E5312757 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96A371A530C09D33AE90FB29 /* Pods-white and fluffy test.debug.xcconfig */,
+				8EE26ECDBCEBEE6A8BA888D0 /* Pods-white and fluffy test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		857C539828462D9200A36A5B /* white and fluffy test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 857C53B028462D9400A36A5B /* Build configuration list for PBXNativeTarget "white and fluffy test" */;
+			buildPhases = (
+				98F851A0A3842B36CEFDC6F8 /* [CP] Check Pods Manifest.lock */,
+				857C539528462D9200A36A5B /* Sources */,
+				857C539628462D9200A36A5B /* Frameworks */,
+				857C539728462D9200A36A5B /* Resources */,
+				661A890D72743ED21586C335 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "white and fluffy test";
+			productName = "white and fluffy test";
+			productReference = 857C539928462D9200A36A5B /* white and fluffy test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		857C539128462D9200A36A5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					857C539828462D9200A36A5B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 857C539428462D9200A36A5B /* Build configuration list for PBXProject "white and fluffy test" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 857C539028462D9200A36A5B;
+			productRefGroup = 857C539A28462D9200A36A5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				857C539828462D9200A36A5B /* white and fluffy test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		857C539728462D9200A36A5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8598A6C928480BBC00352B53 /* favorite.json in Resources */,
+				857C53AC28462D9400A36A5B /* LaunchScreen.storyboard in Resources */,
+				857C53A928462D9400A36A5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		661A890D72743ED21586C335 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F851A0A3842B36CEFDC6F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-white and fluffy test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		857C539528462D9200A36A5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8583DEBD28476B180063ACF7 /* FavoriteTableViewCell.swift in Sources */,
+				857C53B82846322000A36A5B /* ImagesResults.swift in Sources */,
+				857C53B628462FBF00A36A5B /* ImagesViewController.swift in Sources */,
+				857C53C22846A81300A36A5B /* NetworkDataFetcher.swift in Sources */,
+				857C53B428462F8400A36A5B /* FavoriteImageViewController.swift in Sources */,
+				857C53A128462D9200A36A5B /* MainTabBar.swift in Sources */,
+				857C539D28462D9200A36A5B /* AppDelegate.swift in Sources */,
+				857C539F28462D9200A36A5B /* SceneDelegate.swift in Sources */,
+				857C53BC2846328C00A36A5B /* ImagesCollectionViewCell.swift in Sources */,
+				857C53A728462D9200A36A5B /* white_and_fluffy_test.xcdatamodeld in Sources */,
+				8583DEC22847722A0063ACF7 /* NetworkGetImage.swift in Sources */,
+				857C53BE2846337200A36A5B /* Extension UIView + indetifier.swift in Sources */,
+				8583DEC028476C8D0063ACF7 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		857C53AA28462D9400A36A5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857C53AB28462D9400A36A5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		857C53AE28462D9400A36A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		857C53AF28462D9400A36A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		857C53B128462D9400A36A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A371A530C09D33AE90FB29 /* Pods-white and fluffy test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFCLB59ALA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "white and fluffy test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "markarian.georgii.white-and-fluffy-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		857C53B228462D9400A36A5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EE26ECDBCEBEE6A8BA888D0 /* Pods-white and fluffy test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFCLB59ALA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "white and fluffy test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "markarian.georgii.white-and-fluffy-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		857C539428462D9200A36A5B /* Build configuration list for PBXProject "white and fluffy test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857C53AE28462D9400A36A5B /* Debug */,
+				857C53AF28462D9400A36A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		857C53B028462D9400A36A5B /* Build configuration list for PBXNativeTarget "white and fluffy test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857C53B128462D9400A36A5B /* Debug */,
+				857C53B228462D9400A36A5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		857C53A528462D9200A36A5B /* white_and_fluffy_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				857C53A628462D9200A36A5B /* white_and_fluffy_test.xcdatamodel */,
+			);
+			currentVersion = 857C53A628462D9200A36A5B /* white_and_fluffy_test.xcdatamodel */;
+			path = white_and_fluffy_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 857C539128462D9200A36A5B /* Project object */;
+}
