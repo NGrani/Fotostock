@@ -10,7 +10,7 @@ struct ImagesResults: Decodable, Encodable, Equatable{
     static func == (lhs: ImagesResults, rhs: ImagesResults) -> Bool {
         lhs.urls == rhs.urls
     }
-    
+
     let width: Int
     let height: Int
     let downloads: Int

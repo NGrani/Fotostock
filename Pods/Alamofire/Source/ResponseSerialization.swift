@@ -991,6 +991,7 @@ extension ResponseSerializer {
                                                dataPreprocessor: DataPreprocessor = DecodableResponseSerializer<T>.defaultDataPreprocessor,
                                                decoder: DataDecoder = JSONDecoder(),
                                                emptyResponseCodes: Set<Int> = DecodableResponseSerializer<T>.defaultEmptyResponseCodes,
+                                               
                                                emptyRequestMethods: Set<HTTPMethod> = DecodableResponseSerializer<T>.defaultEmptyRequestMethods) -> DecodableResponseSerializer<T> where Self == DecodableResponseSerializer<T> {
         DecodableResponseSerializer<T>(dataPreprocessor: dataPreprocessor,
                                        decoder: decoder,

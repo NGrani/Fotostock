@@ -9,15 +9,13 @@ import UIKit
 import SDWebImage
 
 class FavoriteTableViewCell: UITableViewCell {
-    
     private let cellView: UIView = {
         let cellView = UIView()
         cellView.translatesAutoresizingMaskIntoConstraints = false
         cellView.backgroundColor = .white
         return cellView
     }()
-    
-    private var photoImage:UIImageView = {
+    private var photoImage: UIImageView = {
         let photoImage = UIImageView()
         photoImage.translatesAutoresizingMaskIntoConstraints = false
         photoImage.contentMode = .scaleAspectFill
@@ -25,7 +23,6 @@ class FavoriteTableViewCell: UITableViewCell {
         photoImage.clipsToBounds = true
         return photoImage
     }()
-    
     var autorLabel: UILabel = {
         let autorLabel = UILabel()
         autorLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -35,8 +32,6 @@ class FavoriteTableViewCell: UITableViewCell {
         autorLabel.text = "sometext"
         return autorLabel
     }()
-    
-    
     var randomUnsplashPhoto: ImagesResults! {
         didSet {
             let photoUrl = randomUnsplashPhoto.urls["regular"]
@@ -61,7 +56,6 @@ class FavoriteTableViewCell: UITableViewCell {
     
     private func layout() {
         [cellView, photoImage, autorLabel].forEach { contentView.addSubview($0)}
-        
         NSLayoutConstraint.activate([
             cellView.topAnchor.constraint(equalTo: contentView.topAnchor),
             cellView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
@@ -69,19 +63,16 @@ class FavoriteTableViewCell: UITableViewCell {
             cellView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             cellView.heightAnchor.constraint(equalToConstant: 100)
         ])
-        
         NSLayoutConstraint.activate([
             photoImage.leadingAnchor.constraint(equalTo: cellView.leadingAnchor, constant: 16),
             photoImage.heightAnchor.constraint(equalToConstant: 100),
             photoImage.widthAnchor.constraint(equalToConstant: 100)
         ])
-        
         NSLayoutConstraint.activate([
             autorLabel.leadingAnchor.constraint(equalTo: photoImage.trailingAnchor, constant: 16),
             autorLabel.centerYAnchor.constraint(equalTo: cellView.centerYAnchor)
         ])
     }
-    
     private func customizeCell(){
         photoImage.layer.cornerRadius = 6
     }

@@ -10,14 +10,16 @@ import Alamofire
 
 class NetworkGetImage {
 
+    static let shared = NetworkGetImage()
+
+    private init() {}
+
     private func prepareParaments(searchTerm: String?) -> [String: String] {
         var parameters = [String: String]()
-        
         parameters["query"] = searchTerm
         parameters["count"] = String(30)
         return parameters
     }
-
     private func url(params: [String: String]) -> URL{
         var components = URLComponents()
         components.scheme = "https"
@@ -26,13 +28,11 @@ class NetworkGetImage {
         components.queryItems = params.map { URLQueryItem(name: $0, value: $1)}
         return components.url!
     }
-
     private func prepareHeader() -> [String: String]? {
         var headers = [String: String]()
         headers["Authorization"] = "Client-ID TCteojlpjmf7S8utIyMAG1M_1EqTF2Juj7EEwYm3X_Y"
         return headers
     }
-
     private func createDataTask(from request: URLRequest, completion: @escaping (Data? , Error?) -> Void) -> URLSessionDataTask {
         return URLSession.shared.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
@@ -40,7 +40,6 @@ class NetworkGetImage {
             }
         }
     }
-
     func request(searchRequest: String, completion: @escaping (Data?, Error?) -> Void){
         let parameters = self.prepareParaments(searchTerm: searchRequest)
         let url = self.url(params: parameters)
@@ -50,7 +49,29 @@ class NetworkGetImage {
         let task = createDataTask(from: request, completion: completion)
         task.resume()
     }
-    
+
+    func fetchImages(searchRequest: String, completion: @escaping ([ImagesResults]?) -> ()) {
+        request(searchRequest: searchRequest) { (data, error) in
+            if let error = error {
+                print("Error received requesting data: \(error.localizedDescription)")
+                completion(nil)
+            }
+            let decode = self.decodeJSON(type: [ImagesResults].self, from: data)
+            completion(decode)
+        }
+    }
+    private func decodeJSON<T: Decodable>(type: T.Type, from: Data?) -> T? {
+        let decoder = JSONDecoder()
+        guard let data = from else { return nil }
+
+        do {
+            let objects = try decoder.decode(type.self, from: data)
+            return objects
+        } catch let jsonError {
+            print("Failed to decode JSON", jsonError)
+            return nil
+        }
+    }
     func jsonAlomofire(searchRequest: String, completion: @escaping ([ImagesResults]) -> Void){
         let parameters = self.prepareParaments(searchTerm: searchRequest)
         let url = self.url(params: parameters)

@@ -9,7 +9,6 @@ import UIKit
 import SDWebImage
 
 class ImagesCollectionViewCell: UICollectionViewCell {
-    
     var photoImage:UIImageView = {
         let photoImage = UIImageView()
         photoImage.translatesAutoresizingMaskIntoConstraints = false
@@ -18,7 +17,6 @@ class ImagesCollectionViewCell: UICollectionViewCell {
         photoImage.clipsToBounds = true
         return photoImage
     }()
-    
     var randomUnsplashPhoto: ImagesResults! {
         didSet {
             let photoUrl = randomUnsplashPhoto.urls["regular"]
@@ -39,7 +37,6 @@ class ImagesCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         photoImage.image = nil
     }
-    
     private func layout() {
         contentView.addSubview(photoImage)
         
@@ -50,8 +47,7 @@ class ImagesCollectionViewCell: UICollectionViewCell {
             photoImage.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
-    
-    private func customizeCell(){
+    private func customizeCell() {
         photoImage.layer.cornerRadius = 6
     }
 }

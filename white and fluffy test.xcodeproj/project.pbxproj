@@ -19,10 +19,11 @@
 		857C53B82846322000A36A5B /* ImagesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53B72846322000A36A5B /* ImagesResults.swift */; };
 		857C53BC2846328C00A36A5B /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53BB2846328C00A36A5B /* ImagesCollectionViewCell.swift */; };
 		857C53BE2846337200A36A5B /* Extension UIView + indetifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53BD2846337200A36A5B /* Extension UIView + indetifier.swift */; };
-		857C53C22846A81300A36A5B /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53C12846A81300A36A5B /* NetworkDataFetcher.swift */; };
+		857C53C22846A81300A36A5B /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C53C12846A81300A36A5B /* LocalDataService.swift */; };
 		8583DEBD28476B180063ACF7 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583DEBC28476B180063ACF7 /* FavoriteTableViewCell.swift */; };
 		8583DEC028476C8D0063ACF7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583DEBF28476C8D0063ACF7 /* DetailViewController.swift */; };
 		8583DEC22847722A0063ACF7 /* NetworkGetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583DEC12847722A0063ACF7 /* NetworkGetImage.swift */; };
+		858DFBB8284BD74F00A43E32 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DFBB7284BD74F00A43E32 /* DetailView.swift */; };
 		8598A6C928480BBC00352B53 /* favorite.json in Resources */ = {isa = PBXBuildFile; fileRef = 8598A6C828480BBC00352B53 /* favorite.json */; };
 /* End PBXBuildFile section */
 
@@ -41,10 +42,11 @@
 		857C53B72846322000A36A5B /* ImagesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesResults.swift; sourceTree = "<group>"; };
 		857C53BB2846328C00A36A5B /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		857C53BD2846337200A36A5B /* Extension UIView + indetifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension UIView + indetifier.swift"; sourceTree = "<group>"; };
-		857C53C12846A81300A36A5B /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		857C53C12846A81300A36A5B /* LocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
 		8583DEBC28476B180063ACF7 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		8583DEBF28476C8D0063ACF7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8583DEC12847722A0063ACF7 /* NetworkGetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGetImage.swift; sourceTree = "<group>"; };
+		858DFBB7284BD74F00A43E32 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		8598A6C828480BBC00352B53 /* favorite.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = favorite.json; sourceTree = "<group>"; };
 		8EE26ECDBCEBEE6A8BA888D0 /* Pods-white and fluffy test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-white and fluffy test.release.xcconfig"; path = "Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test.release.xcconfig"; sourceTree = "<group>"; };
 		96A371A530C09D33AE90FB29 /* Pods-white and fluffy test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-white and fluffy test.debug.xcconfig"; path = "Target Support Files/Pods-white and fluffy test/Pods-white and fluffy test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +113,7 @@
 		857C53C52846AD9400A36A5B /* NetworkRequest */ = {
 			isa = PBXGroup;
 			children = (
-				857C53C12846A81300A36A5B /* NetworkDataFetcher.swift */,
+				857C53C12846A81300A36A5B /* LocalDataService.swift */,
 				8583DEC12847722A0063ACF7 /* NetworkGetImage.swift */,
 				8598A6CA284810B100352B53 /* localData */,
 			);
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8583DEBF28476C8D0063ACF7 /* DetailViewController.swift */,
+				858DFBB7284BD74F00A43E32 /* DetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -295,7 +298,8 @@
 				8583DEBD28476B180063ACF7 /* FavoriteTableViewCell.swift in Sources */,
 				857C53B82846322000A36A5B /* ImagesResults.swift in Sources */,
 				857C53B628462FBF00A36A5B /* ImagesViewController.swift in Sources */,
-				857C53C22846A81300A36A5B /* NetworkDataFetcher.swift in Sources */,
+				858DFBB8284BD74F00A43E32 /* DetailView.swift in Sources */,
+				857C53C22846A81300A36A5B /* LocalDataService.swift in Sources */,
 				857C53B428462F8400A36A5B /* FavoriteImageViewController.swift in Sources */,
 				857C53A128462D9200A36A5B /* MainTabBar.swift in Sources */,
 				857C539D28462D9200A36A5B /* AppDelegate.swift in Sources */,

@@ -7,34 +7,11 @@
 
 import Foundation
 
-class NetworkDataFetcher {
+class LocalDataService {
 
-    private var networkGetRandom = NetworkGetImage()
+    static let shared = LocalDataService()
 
-    func fetchImages(searchRequest: String, completion: @escaping ([ImagesResults]?) -> ()) {
-        networkGetRandom.request(searchRequest: searchRequest) { (data, error) in
-            if let error = error {
-                print("Error received requesting data: \(error.localizedDescription)")
-                completion(nil)
-            }
-
-            let decode = self.decodeJSON(type: [ImagesResults].self, from: data)
-            completion(decode)
-        }
-    }
-
-    private func decodeJSON<T: Decodable>(type: T.Type, from: Data?) -> T? {
-        let decoder = JSONDecoder()
-        guard let data = from else { return nil }
-
-        do {
-            let objects = try decoder.decode(type.self, from: data)
-            return objects
-        } catch let jsonError {
-            print("Failed to decode JSON", jsonError)
-            return nil
-        }
-    }
+    private init() {}
 
     func saveJson(fileName: String, model: [ImagesResults] ){
         if let filepath = Bundle.main.path(forResource: fileName, ofType: "json") {
@@ -49,7 +26,6 @@ class NetworkDataFetcher {
             }
         }
     }
-    
     func loadJson(filename fileName: String )->[ImagesResults]{
         var level: [ImagesResults]?
         if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
